@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="bg-dark text-center">
+        <h1 class="text-center text-white ">Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <!--area for city search -->
+            <div class="row justify-content-start">
+                <div class="col-2">
+                    <strong>Search for a City: </strong>
+                    <div class="search-container">
+                        <!-- city search function -->
+                        <form>
+                            <input id="searchArea" type="text" placeholder="  Enter city to search  " name="search">
+                            <button id="searchBtn" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <div class="searchHistory">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!-- area for cities-->
+                                <div class="jumbotron">
+                                    <h4 class="text-4">Your Current Conditions</h4>
+                                    <hr class="my-4">
+                                    <div class="row">
+                                        <div class="weather-container align-items-center">
+                                            <div class="row-flu">  <!--flu adds dynamics for screen size-->                                                <!--add row-fluid to auto sizing-->
+                                                <p class="name">City of </p>
+                                                <img class="icon">
+                                                <p class="weather"></p>
+                                            </div>
+                                            <div class="row row-cols-2 align-self-center">
+                                                <div class="col-sm">
+                                                    <p class="temp"></p>
+                                                    <p class="humidity"></p>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <p class="wind"></p>
+                                                    <p class="uv"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- 5-Day Forecast -->
+                         <!-- First Day Forecast -->
+                        <div class="container">
+                            <h6>5 Day Forecast</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card1" style="width: 10rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text date1"></p>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text temp1">Temp: </p>
+                                            <p class="card-text humidity1">Humidity: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Second Day Forecast -->
+                                <div class="col">
+                                    <div class="card2" style="width: 10rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text date2"></p>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text temp2">Temp: </p>
+                                            <p class="card-text humidity2">Humidity: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Third Day Forecast -->
+                                <div class="col">
+                                    <div class="card3" style="width: 10rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text date3"></p>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text temp3">Temp: </p>
+                                            <p class="card-text humidity3">Humidity: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fourth Day Forecast -->
+                                <div class="col">
+                                    <div class="card4" style="width: 10rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text date4"></p>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text temp4">Temp: </p> 
+                                            <p class="card-text humidity4">Humidity: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fifth Day Forecast -->
+                                <div class="col">
+                                    <div class="card5" style="width: 10rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text date5"></p>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text temp5">Temp: </p>
+                                            <p class="card-text humidity5">Humidity: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+<script src="./assets/js/listings.js"></script>
+</body>
+
+</html>

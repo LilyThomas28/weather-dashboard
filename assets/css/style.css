@@ -1,0 +1,52 @@
+body {
+	background-color:lightgray;
+	color: gray;
+}
+button {
+    color:lightblue;
+}
+.city-container {
+	font-size: 16px;
+	margin-top: 1%;
+    padding: 2%;
+}
+.weather-container {
+	font-size: 100%;
+    color: white;
+    text-align: center;
+    background-color: lightblue;
+    padding: 2% 65% 2% 1%;
+    text-align: center;
+    margin: 5px;
+}
+.container {
+    justify-content: center;
+    padding:20px 0;
+}
+.card-body {
+	background-color: gray;
+}
+h5 {
+	justify-content: center;
+}
+.jumbotron {
+    justify-content: center;
+    font-weight: bold;
+    padding:1% 1% 1% 5%;
+    color: lightblue;
+    background-color: black;
+
+}
+.container-5D {
+    color: skyblue;
+    margin-inline-start: auto;
+    padding: 2;
+    font-size: smallest(10px);
+}
+h6 {
+    font-size: 14px; 
+    color: white;
+}
+.card-text {
+    color: white;
+}

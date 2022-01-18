@@ -24,7 +24,7 @@ $(document).ready(function () {
 	$('#searchBtn').click(function (e) {
 		e.preventDefault();
 
-		var apiKey = '2c820066ae7ac5a97f92d60b8422d7ff';
+		var apiKey = '26930063b2b8705cb97e40c0757804d4';
 		var cityName = $('#searchArea').val().trim();
 
 		weatherSearch[weatherSearch.length] = {
@@ -57,7 +57,7 @@ $(document).ready(function () {
 		),
 			// 2nd weather API for UV, different from city, icon, temp, humidity, weather, wind
 			$.getJSON(
-				`https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=2c820066ae7ac5a97f92d60b8422d7ff` +
+				`https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=26930063b2b8705cb97e40c0757804d4` +
 					name,
 				function (data) {
 					console.log(data); //using to collect data outside Postman
@@ -67,7 +67,7 @@ $(document).ready(function () {
 			),
 			//  Five Day Forecast - collecting temp and humidity for 3rd Weather API
 			$.getJSON(
-				`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=2c820066ae7ac5a97f92d60b8422d7ff`,
+				`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=26930063b2b8705cb97e40c0757804d4`,
 				function (data) {
 					console.log(data); //using to collect data outside Postman
 
